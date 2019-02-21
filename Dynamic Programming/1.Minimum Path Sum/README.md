@@ -26,3 +26,4 @@ you can only go right or down in the path..
 Solution1.java provides a state transition table to address the problem. Usually they can be solved by the back tracing algorithm (brute force).    
 Solution2.java makes use of recurssion formulation to address the problem (similar to the way the recursive algorithm does). Usually two ways to approach: one is recurssion plus 'memorandum' and the other is iterative recurrence. Solution2 is the approach 1, solution1 is the approach 2 but with different track of thoughts.
 
+From Lintcode No.110.
