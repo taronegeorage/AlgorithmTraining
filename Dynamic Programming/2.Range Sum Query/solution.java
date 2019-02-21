@@ -1,3 +1,5 @@
+//From lintcode No.943
+
 class NumArray {
     private int[] dp;
     public NumArray(int[] nums) {
