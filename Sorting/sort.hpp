@@ -4,6 +4,9 @@
 #include <iterator>
 #include <functional>
 
+#include <algorithm>
+#include <vector>
+
 // in-place algorithm, stable, O(n^2)
 template <typename BidirIt, typename BinaryPred = std::less<typename std::iterator_traits<BidirIt>::value_type> >
 void bubble_sort(BidirIt first, BidirIt last, BinaryPred comp = BinaryPred()){
@@ -70,6 +73,8 @@ void shell_sort(BidirIt first, BidirIt last, BinaryPred comp = BinaryPred()){
         }
     }
 }
+
+
 
 
 #endif
