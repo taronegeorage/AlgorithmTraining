@@ -1,0 +1,16 @@
+// leetcode 518.
+class Solution {
+public:
+    int change(int amount, vector<int>& coins) {
+        long dp[amount+1] = {0};
+        dp[0] = 1;
+        for(auto& c : coins) {
+            for(int i = c; i <= amount; i++) 
+                dp[i] += dp[i-c];
+        } 
+        return dp[amount];
+    }
+};
+
+// 4ms 98.74%
+// 8.5MB 100%
